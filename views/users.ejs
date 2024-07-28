@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <h1>Foydalanuvchilar</h1>
+    
+  
+    <ol>
+      <% users.forEach(user => { %>
+        <li><%= user.username %> (<%= user.name %>, <%= user.email %>)</li>
+      <% }) %>
+    </ol>
+  </body>
+</html>

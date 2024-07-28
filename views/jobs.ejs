@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    <h1>Mening qilgan ishlarim</h1>
+    <ul>
+      <% jobs.forEach(job => { %>
+        <li><%= job.title %> at <%= job.company %> (<%= job.years %> years)</li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
+
